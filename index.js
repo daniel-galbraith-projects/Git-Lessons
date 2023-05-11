@@ -3,6 +3,7 @@ const textbox = document.querySelector("#textbox");
 const user = document.querySelector("#user");
 
 accept.addEventListener("click", (e) => {
-    e.preventDefault()
+  e.preventDefault();
   textbox.value += user.value;
+  user.value = "";
 });
